@@ -70,7 +70,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "fran6p, CR-10 V2)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "Sjo.hey, CR-10 V2" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -1613,7 +1613,7 @@
 #define Z_CLEARANCE_MULTI_PROBE     5 // (mm) Z Clearance between multiple probes
 #define Z_AFTER_PROBING             5 // (mm) Z position after probing is done
 
-#define Z_PROBE_LOW_POINT          -2 // (mm) Farthest distance below the trigger-point to go before stopping
+#define Z_PROBE_LOW_POINT          -10 // (mm) Farthest distance below the trigger-point to go before stopping
 
 // For M851 give a range for adjusting the Z probe offset
 #define Z_PROBE_OFFSET_RANGE_MIN -9
@@ -1746,8 +1746,8 @@
 // @section geometry
 
 // The size of the printable area
-#define X_BED_SIZE 310 // Nozzle is at X0 when homed
-#define Y_BED_SIZE 310 // Nozzle is at Y0 when homed
+#define X_BED_SIZE 300 // Nozzle is at X0 when homed
+#define Y_BED_SIZE 300 // Nozzle is at Y0 when homed
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -2278,7 +2278,7 @@
 // Preheat Constants - Up to 10 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 205
+#define PREHEAT_1_TEMP_HOTEND 200
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_TEMP_CHAMBER 35
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
